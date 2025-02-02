@@ -4,14 +4,14 @@
     "builds":[
 
         {
-            "src":"./proxyServer.js",
+            "src":"proxyServer.js",
             "use":"@vercel/node"
         }
     ],
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"/"
+            "dest":"/proxyServer.js"
         }
     ]
 
